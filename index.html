@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circl | A Modern Social Platform</title>
+    
+    <!--Icons-->
+    <link rel="icon" href="images/appicon.ico">
+    
+    <!--Stylsheets-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="l-navbar nav-theme">
+    <div class="logo">
+        <img src="./images/logo.png" alt="Circl Logo">
+    </div>
+    <div class="mobile-nav-button is-mobile">
+        <a href="javascript:void(0);" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a> 
+    </div>
+    <div id="navlinks" class="l-nav-links">
+        <a href="./" class="is-active ">Home</a>
+        <a href="./business">Businesses</a>
+        <a href="./contact">Contact Us</a> 
+        <a href="http://onelink.to/ek4xqr" class="is-mobile">Download Now!</a>
+        <a href="./terms" class="is-mobile">Terms</a>
+        <a href="./privacy" class="is-mobile">Privacy</a>
+    </div>
+</div>
+<div id="front" class="l-front front-theme">
+    <div>
+        <h3>Hanging with your friends has never been easier</h3>
+        <h4>Try Circl today!</h4>
+    </div>
+
+    <div id="introbuttons" class="l-downloadbuttons padding-bot-5">
+        <a href="https://www.apple.com/">
+            <div class="downloadbutton">
+                <img  src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="apple icon">
+            </div>
+        </a>
+        <a href="https://play.google.com/">
+            <div class="downloadbutton">
+                <img  src="images/google-play-badge.png" alt="play icon">
+            </div>
+        </a>
+    </div>
+    <h4 class="padding-bot-5">Available on iOS & Android</h4>
+</div>
+<div id="body" class="l-body">
+    <div id="features" class="l-features">
+        <div class="feature">
+            <div class="feature-desc">
+                <h4>Feature title</h4>
+                <h5>Feature subtitle</h5>
+            </div>
+            <div class="img-container">
+                <img src="images/demoimg.png">
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-desc">
+                <h4>Feature title</h4>
+                <h5>Feature subtitle</h5>
+            </div>
+            <div class="img-container">
+                <img src="images/demoimg.png">
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-desc">
+                <h4>Feature title</h4>
+                <h5>Feature subtitle</h5>
+            </div>
+            <div class="img-container">
+                <img src="images/demoimg.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsbuttons" class="l-downloadbuttons">
+        <a href="https://www.apple.com/">
+            <div class="downloadbutton">
+                <img src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="apple icon">
+            </div>
+        </a>
+        <a href="https://play.google.com/">
+            <div class="downloadbutton">
+                <img src="images/google-play-badge.png" alt="play icon">
+            </div>
+        </a>
+    </div>
+</div>
+<div id="footer" class="l-foot foot-theme">   
+    <a href="./privacy">Privacy</a>
+    <a href="./terms">Terms</a>
+</div>
+</body>
+
+<!--Navmenu Script (for mobile button)-->
+<script>
+    function mobileMenu() {
+        var x = document.getElementById("navlinks");
+        if (x.className === "l-nav-links") {
+            x.className += " mobilebutton-is-pressed";
+        } else {
+            x.className = "l-nav-links";
+        }
+    }
+
+    
+</script>
+
+<script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.nav-theme');
+      if(window.pageYOffset>0){
+        nav.classList.add("shadow");
+      }else{
+        nav.classList.remove("shadow");
+      }
+    });
+  </script>
+
+</html>
