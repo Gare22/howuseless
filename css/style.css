@@ -156,21 +156,6 @@ div{
     padding:2rem;
 }
 
-/*Front Page*/
-.l-front{
-    height: calc(100vh - 6rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
-}
-
-.l-front > * {
-    width: min(90%, 769px);
-    margin: auto;
-}
-
 /*All images and their containers*/
 .img-container{
     text-align: center;
