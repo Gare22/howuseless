@@ -60,7 +60,7 @@ div{
     left:0;
     min-height: 6rem;
     width: 100%;
-    background-color: #4b8fe2;
+    background-color: #e22727;
     color:whitesmoke;
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -87,7 +87,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #4b8fe2;
+    background-color: #e22727;
 }
 .l-nav-links a{
     padding:2rem;
@@ -106,7 +106,7 @@ div{
 
 @media (min-width:769px) {
     .l-navbar{
-        color:#4b8fe2;
+        color:#e22727;
     }
     
     .is-mobile{
@@ -126,8 +126,8 @@ div{
     }
 
     .l-nav-links a:hover{
-        color:#4b8fe2;
-        text-decoration-color:#4b8fe2;
+        color:#e22727;
+        text-decoration-color:#e22727;
     }
     
     .l-nav-links a.is-active{
@@ -200,12 +200,12 @@ div{
             Themes
 **************************************************/
 .nav-theme{
-    background-color: #3276C9;
+    background-color: #e22727;
 }
 
 .front-theme{
     color:whitesmoke;
-    background-color: #3276C9;
+    background-color: #e22727;
     background-image: url("../images/front.png");
 }
 
