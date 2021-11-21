@@ -69,6 +69,7 @@ div{
 
 .l-logo{
     padding-left:3rem;
+    position: relative;
 }
 
 .l-nav-links{
@@ -91,11 +92,12 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #e22727;
+    background-color: #dfd817;
 }
+
 .l-nav-links a{
     padding:2rem;
-    color: whitesmoke;
+    color: rgb(29, 28, 28);
     min-height: 6rem;
 }
 
@@ -104,8 +106,8 @@ div{
 }
 
 .l-nav-links a.is-active{
-    color:rgb(97, 97, 97);
-    background-color: #b7d894;
+    color:whitesmoke;
+    background-color: #e48f35;
 }
 
 @media (min-width:769px) {
@@ -118,7 +120,6 @@ div{
     }
     
     .mobile-nav-button{
-    
         display:none;
     }
 
@@ -130,13 +131,19 @@ div{
     }
 
     .l-nav-links a:hover{
-        color:#e22727;
-        text-decoration-color:#e22727;
+        color:#e48f35;
+        text-decoration-color:#e48f35;
     }
     
     .l-nav-links a.is-active{
+        color: #e22727;
         text-decoration: underline 0.15em;
         background-color: inherit
+    }
+    
+    .l-nav-links a.is-active:hover{
+        color:#e48f35;
+        text-decoration-color:#e48f35;
     }
 
     .l-nav-links, .l-nav-links.mobilebutton-is-pressed{
@@ -149,6 +156,16 @@ div{
 /*Body*/
 .l-body{
     min-height: calc(100vh - 13rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Grids*/
+.l-grid-3-wide{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
 }
 
 /*Footer*/
@@ -179,6 +196,21 @@ div{
 }
 
 
+
+.centered-text{
+    text-align: center;
+}
+
+
+/*Center stuff vertically inside of div element*/
+.v-centered-in-div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 /*Padding and Margins*/
 .padding-bot-5{
     padding-bottom: 5rem;
@@ -187,6 +219,13 @@ div{
 .padding-2{
     padding:2rem;
 }
+
+/*Just margin set to auto, that's it*/
+.centered-margin{
+    margin:auto;
+}
+
+
 
 /*************************************************
             States (not directly related to a module)
@@ -240,15 +279,3 @@ div{
     box-shadow: 0px 0px 10px rgb(46, 46, 46, 0.5);
 }
 
-.centered-text{
-    text-align: center;
-}
-
-/*Center stuff vertically inside of div element*/
-.v-centered-in-div{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
