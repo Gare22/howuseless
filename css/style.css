@@ -11,6 +11,10 @@ html{
     font-size:10px;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html, body{
     margin:0;
     padding:0;
@@ -168,6 +172,45 @@ div{
     gap:1rem;
 }
 
+.l-grid-5-wide{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:2rem;
+}
+
+.button-game{
+    padding: 6rem;
+}
+
+/*Buttons and Button Game*/
+.button-game > button{
+    height: 2rem;
+    background-color: rgb(255, 238, 0);
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.button-game > button:hover{
+    background-color: rgb(255, 249, 167);
+}
+
+.button-game > button:active{
+    border-top: 1px solid #111010;;
+    border-left: 1px solid #111010;;
+    border-right: 1px solid #111010;;
+    background-color: rgb(255, 249, 167);
+}
+
+
+.button-game > .the-button{
+    background-color: red;
+}
+
+.button-game > .the-button:hover{
+    background-color: rgb(138, 138, 138);
+}
+
 /*Footer*/
 .l-foot{
     min-height: 6rem;
@@ -266,6 +309,10 @@ div{
 
 .foot-theme a:hover{
     color:#b7d894;
+}
+
+.game-theme{
+    background-color:#111010;
 }
 
 @media (min-width:769px) {
